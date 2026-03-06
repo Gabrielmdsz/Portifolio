@@ -1,0 +1,42 @@
+@import "tailwindcss";
+
+
+
+@layer base {
+  /* TEMA LIGHT */
+  :root {
+    --bg-primary: #f3f4f6;      /* Cinza claro base (gray-100) */
+    --text-primary: #111827;    /* Cinza quase preto para alto contraste */
+    --text-secondary: #4b5563;  
+    
+    --accent-color: #3b82f6;    /* Azul Nimbus (blue-500) */
+    --accent-hover: #2563eb;    /* Azul um pouco mais escuro para hover */
+    
+    --ui-surface: #e5e7eb;      /* Fundo de botões e cards */
+    --ui-border: #d1d5db;       
+  }
+
+  /* TEMA DARK */
+  .dark {
+    --bg-primary: #1f2937;      /* Cinza escuro base (gray-800) */
+    --text-primary: #f9fafb;    /* Branco off-white */
+    --text-secondary: #9ca3af;  
+    
+    --accent-color: #a855f7;    /* Roxo/Lilás (purple-500) */
+    --accent-hover: #c084fc;    /* Lilás mais claro para brilho/hover */
+    
+    --ui-surface: #374151;      
+    --ui-border: #4b5563;       
+    
+    /* Cores do mock do editor */
+    --code-bg: #111827;         
+    --code-header: #1f2937;
+  }
+}
+
+/* Aplicação global baseada no tema */
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
