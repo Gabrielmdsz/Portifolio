@@ -1,5 +1,6 @@
 import About from "./components/about"
 import PortfolioHero from "./components/hero"
+import Skills from "./components/skills/skills"
 
 
 function App() {
@@ -9,6 +10,7 @@ function App() {
     <>
       <PortfolioHero />
       <About />
+      <Skills />
     </>
   )
 }
