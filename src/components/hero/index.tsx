@@ -64,7 +64,7 @@ const PortfolioHero = () => {
           </div>
           
           <p className="text-lg md:text-xl text-(--text-secondary) max-w-md">
-            Desenvolvedor Front-end. Transformando ideias em soluções digitais com código limpo, focando em performance e experiências web incríveis.
+            Transformo ideias em soluções interativas de alta conversão. Construo experiências digitais fluidas e escaláveis, priorizando aplicações rápidas, acessíveis e com foco absoluto no usuário.
           </p>
           
           <button className="mt-4 px-8 py-3 bg-(--accent-color) hover:bg-(--accent-hover) text-white font-medium rounded-md flex items-center gap-2 transition-all transform hover:-translate-y-1 shadow-lg">
@@ -88,7 +88,7 @@ const PortfolioHero = () => {
             <div className="p-6 font-mono text-sm leading-relaxed text-gray-300">
               <p><span className="text-pink-400">const</span> <span className="text-blue-400">gabriel</span> = {'{'}</p>
               <p className="pl-4"><span className="text-sky-300">role:</span> <span className="text-yellow-300">'Front-end Developer'</span>,</p>
-              <p className="pl-4"><span className="text-sky-300">stack:</span> [<span className="text-yellow-300">'React'</span>, <span className="text-yellow-300">'Tailwind'</span>],</p>
+              <p className="pl-4"><span className="text-sky-300">stack:</span> [<span className="text-yellow-300">'React'</span>, <span className="text-yellow-300">'TypeScript'</span>],</p>
               <p className="pl-4"><span className="text-sky-300">hobbies:</span> [<span className="text-yellow-300">'Muay Thai'</span>, <span className="text-yellow-300">'Animes'</span>],</p>
               <p className="pl-4"><span className="text-sky-300">buildAwesomeWebsites:</span> <span className="text-blue-400">()</span> <span className="text-pink-400">=&gt;</span> {'{'}</p>
               <p className="pl-8 text-gray-500">// Magic happens here</p>
@@ -102,7 +102,6 @@ const PortfolioHero = () => {
 
       {/* === ELEMENTOS INFERIORES === */}
       <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 flex flex-col items-center gap-2 z-20">
-        <span className="text-xs uppercase tracking-widest text-(--text-secondary)">Scroll</span>
         <ArrowDown className="animate-bounce text-(--accent-color)" size={24} />
       </div>
 

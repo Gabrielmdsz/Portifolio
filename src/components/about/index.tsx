@@ -57,7 +57,7 @@ const About = () => {
 
                     {/* Texto de Apresentação */}
                     <p className="text-(--text-secondary) text-lg leading-relaxed mb-8 max-w-2xl">
-                        Olá! Meu nome é Gabriel Martins. Sou um Desenvolvedor Front-end baseado no Brasil, cursando os últimos períodos de Análise e Desenvolvimento de Sistemas. Sou apaixonado por tecnologia, com foco em criar interfaces limpas, responsivas e que entreguem a melhor experiência possível para o usuário.
+                        Olá! Sou o Gabriel Martins, um Desenvolvedor Front-end dedicado a criar produtos digitais que geram impacto real. Minha base em Análise e Desenvolvimento de Sistemas me ensinou a unir a solidez da engenharia de software com a prática diária do código limpo.  Movido pela tecnologia e sempre embalado por uma boa playlist, meu objetivo é transformar layouts complexos em interfaces fluidas, garantindo aplicações incrivelmente rápidas, acessíveis e centradas nas pessoas.
                     </p>
 
                     {/* Caixa de Informações */}
@@ -73,7 +73,7 @@ const About = () => {
                             </li>
                             <li className="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-2">
                                 <span className="text-(--text-secondary) min-w-25">Telefone:</span>
-                                <span className="font-medium text-(--text-primary)">+55 (81) 90000-0000</span>
+                                <span className="font-medium text-(--text-primary)">+55 (81) 98315-6670</span>
                             </li>
                             <li className="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-2">
                                 <span className="text-(--text-secondary) min-w-25">Localidade:</span>

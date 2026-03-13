@@ -49,7 +49,7 @@ const Contact = () => {
             ./contato
           </span>
           <h2 className="text-4xl md:text-5xl font-bold relative inline-block mb-4 pr-4">
-            Vamos Conversar
+            Inicie uma Conversa
             <div className="absolute -bottom-2 left-0 w-1/3 h-1 bg-(--accent-color) rounded-full transition-all duration-300 group-hover:w-full"></div>
           </h2>
         </div>
@@ -62,11 +62,11 @@ const Contact = () => {
             
             <div className="mb-12 lg:mb-0">
               <h3 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight mb-6">
-                Pronto para transformar <br className="hidden xl:block" />
-                <span className="text-(--accent-color)">ideias em realidade?</span>
+                Pronto para dar vida <br className="hidden xl:block" />
+                <span className="text-(--accent-color)">ao seu próximo projeto?</span>
               </h3>
               <p className="text-(--text-secondary) text-lg sm:text-xl max-w-lg mb-8 leading-relaxed">
-                Comece dizendo um <a href="mailto:seu-email@exemplo.com" className="text-(--text-primary) border-b-2 border-(--accent-color) font-medium hover:text-(--accent-color) transition-colors px-1">oi</a>. Estou sempre aberto a discutir novos projetos, ideias criativas ou oportunidades para evoluirmos juntos.
+                 Estou sempre aberto a desafios que demandem interfaces de alta performance e arquitetura limpa. Se o seu time busca um desenvolvedor dedicado e com forte foco em acessibilidade e design, mande um <a href="mailto:seu-email@exemplo.com" className="text-(--text-primary) border-b-2 border-(--accent-color) font-medium hover:text-(--accent-color) transition-colors px-1">olá</a>. Adoraria conversar sobre como podemos unir forças para construir experiências digitais incríveis.
               </p>
             </div>
 
@@ -104,8 +104,8 @@ const Contact = () => {
               <div className="absolute top-0 right-0 w-64 h-64 bg-(--accent-color) opacity-10 blur-[100px] rounded-full pointer-events-none -z-10"></div>
 
               <div className="mb-2">
-                <p className="text-(--text-primary) font-medium text-lg mb-2">Envie uma mensagem direta</p>
-                <p className="text-(--text-secondary) text-sm">Preencha os dados abaixo e retornarei o mais breve possível!</p>
+                <p className="text-(--text-primary) font-medium text-lg mb-2">Caixa de Entrada</p>
+                <p className="text-(--text-secondary) text-sm">Fique à vontade para propor uma ideia, detalhar uma vaga ou apenas dar um olá. Vamos transformar esse contato em uma excelente parceria.</p>
               </div>
 
               {/* Campo Nome */}
@@ -116,7 +116,7 @@ const Contact = () => {
                 <input 
                   type="text" 
                   id="name"
-                  placeholder="Seu nome completo" 
+                  placeholder="Seu nome ou da sua empresa" 
                   className="w-full bg-(--bg-primary) border border-(--ui-border) rounded-xl px-5 py-3.5 text-(--text-primary) placeholder:text-(--text-secondary)/60 focus:outline-none focus:ring-2 focus:ring-(--accent-color)/50 focus:border-(--accent-color) transition-all duration-300"
                   required
                 />
@@ -130,7 +130,7 @@ const Contact = () => {
                 <input 
                   type="email" 
                   id="email"
-                  placeholder="seu.email@exemplo.com" 
+                  placeholder="seu.melhor@email.com" 
                   className="w-full bg-(--bg-primary) border border-(--ui-border) rounded-xl px-5 py-3.5 text-(--text-primary) placeholder:text-(--text-secondary)/60 focus:outline-none focus:ring-2 focus:ring-(--accent-color)/50 focus:border-(--accent-color) transition-all duration-300"
                   required
                 />
@@ -147,7 +147,7 @@ const Contact = () => {
                 </div>
                 <textarea 
                   id="message"
-                  placeholder="Escreva sua mensagem aqui..." 
+                  placeholder="Conte-me um pouco sobre o seu desafio ou oportunidade..." 
                   rows={5}
                   className="w-full bg-(--bg-primary) border border-(--ui-border) rounded-xl px-5 py-3.5 text-(--text-primary) placeholder:text-(--text-secondary)/60 focus:outline-none focus:ring-2 focus:ring-(--accent-color)/50 focus:border-(--accent-color) transition-all duration-300 resize-none"
                   required
@@ -159,7 +159,7 @@ const Contact = () => {
                 type="submit" 
                 className="mt-4 w-full bg-(--accent-color) hover:bg-(--accent-hover) text-white font-semibold py-4 rounded-xl flex items-center justify-center gap-3 transition-all duration-300 transform active:scale-[0.98] shadow-lg shadow-(--accent-color)/20"
               >
-                Enviar Mensagem
+                Iniciar Conversa
                 <Send size={18} className="transform -translate-y-0.5 translate-x-0.5" />
               </button>
 

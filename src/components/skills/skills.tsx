@@ -67,12 +67,12 @@ const Skills = () => {
               ./habilidades
             </span>
             <h2 className="text-4xl md:text-5xl font-bold relative inline-block mb-4">
-              Meu Arsenal
+              Habilidades Técnicas
               {/* A linha que cresce no hover igual ao About */}
               <div className="absolute -bottom-2 left-0 w-1/3 h-1 bg-(--accent-color) rounded-full transition-all duration-300 group-hover:w-full"></div>
             </h2>
             <p className="text-(--text-secondary) text-lg mt-4 leading-relaxed">
-              Ferramentas e tecnologias que utilizo diariamente para transformar ideias em aplicações web de alta performance.
+              O ecossistema de linguagens e ferramentas que domino para arquitetar, desenvolver e otimizar aplicações web modernas e escaláveis.
             </p>
           </div>
         </div>

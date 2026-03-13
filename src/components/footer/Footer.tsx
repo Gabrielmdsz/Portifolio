@@ -13,10 +13,10 @@ const Footer = () => {
   return (
     // A tag semântica <footer> é excelente para SEO e acessibilidade
     // O bg-gradient escurece levemente o fundo, dando a sensação de "fim de página"
-    <footer className="relative w-full border-t border-(--ui-border) bg-gradient-to-b from-(--bg-primary) to-black/40 overflow-hidden z-0 pt-16 pb-8">
+    <footer className="relative w-full border-t border-(--ui-border) bg-linear-to-b from-(--bg-primary) to-black/40 overflow-hidden z-0 pt-16 pb-8">
       
       {/* Container Principal estendido para acompanhar o design anterior */}
-      <div className="max-w-[90rem] mx-auto px-8 md:px-12 relative z-10 flex flex-col gap-12 sm:gap-16">
+      <div className="max-w-360 mx-auto px-8 md:px-12 relative z-10 flex flex-col gap-12 sm:gap-16">
         
         {/* === PARTE SUPERIOR: Logo, Descrição e Links === */}
         <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center gap-8 lg:gap-12">
@@ -33,26 +33,9 @@ const Footer = () => {
             </a>
             
             <p className="text-(--text-secondary) text-sm leading-relaxed">
-              Construindo interfaces digitais modernas, acessíveis e de alta performance. Focado em transformar ideias em excelentes experiências para o usuário.
+              Elevando o padrão de interfaces web através de código limpo e design centrado no usuário. Transformando requisitos complexos em soluções digitais de alto impacto.
             </p>
           </div>
-
-          {/* Direita: Navegação Rápida */}
-          <nav className="flex flex-wrap gap-6 sm:gap-8">
-            {['Home', 'Sobre', 'Projetos', 'Contato'].map((item) => (
-              <a 
-                key={item} 
-                // Transforma o nome no ID da âncora (ex: "Sobre" vira "#sobre")
-                href={`#${item.toLowerCase()}`} 
-                className="text-(--text-secondary) hover:text-(--accent-color) text-sm font-medium transition-colors duration-300 relative group"
-              >
-                {item}
-                {/* Efeito sênior: sublinhado animado no hover dos links do footer */}
-                <span className="absolute -bottom-1 left-0 w-0 h-[2px] bg-(--accent-color) transition-all duration-300 group-hover:w-full"></span>
-              </a>
-            ))}
-          </nav>
-          
         </div>
 
         {/* === PARTE INFERIOR: Direitos Autorais e Back to Top === */}
@@ -60,7 +43,7 @@ const Footer = () => {
           
           {/* Copyright */}
           <p className="text-(--text-secondary) text-xs font-medium text-center sm:text-left">
-            © 2026 Gabriel. Todos os direitos reservados.
+            Projetado e desenvolvido por Gabriel Martins © 2026.
           </p>
 
           {/* Botão de UX: Voltar ao Topo */}
