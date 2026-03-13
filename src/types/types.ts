@@ -20,3 +20,10 @@ export interface FilterType {
     id: string;
     label: string;
 }
+
+export interface SocialContactType {
+  id: string;
+  name: string;
+  url: string;
+  icon: React.ElementType;
+}
