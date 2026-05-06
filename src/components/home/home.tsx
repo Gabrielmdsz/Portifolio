@@ -27,11 +27,12 @@ const Home = () => {
             Construo experiências digitais fluidas e escaláveis, priorizando
             aplicações rápidas, acessíveis e com foco absoluto no usuário.
           </p>
-
-          <button className="mt-4 px-8 py-3 bg-(--accent-color) hover:bg-(--accent-hover) text-white font-medium rounded-md flex items-center gap-2 transition-all transform group   hover:-translate-y-1 shadow-lg shadow-(--accent-color)/30">
+          <a href="#projetos">
+          <button className="mt-4 px-8 py-3 bg-(--accent-color) hover:bg-(--accent-hover) text-white font-medium rounded-md flex items-center gap-2 transition-all transform group   hover:-translate-y-1 shadow-lg shadow-(--accent-color)/30 cursor-pointer">
             Ver Projetos
             <ArrowDown className="transition-transform duration-300 group-hover:translate-y-1.5" size={18} />
           </button>
+          </a>
         </div>
 
         {/*  Mockup do Editor de Código ( Direita )  */}
