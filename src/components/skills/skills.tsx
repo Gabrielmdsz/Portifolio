@@ -1,47 +1,87 @@
 import  { useRef } from 'react';
-import { ChevronLeft, ChevronRight, Code, FileJson, Atom, Zap, Palette, FileCode2 } from 'lucide-react';
-import SkillCard from './skillcard'; // Ajuste o caminho de importação se necessário
+import { ChevronLeft, ChevronRight, Code, FileJson, Atom,  FileCode2, Palette, Database, Server, Zap, Network, Box, TestTube, HardDrive, Route } from 'lucide-react';
+import SkillCard from './skillcard';
 
-// Array de Skills - Adicione novos objetos aqui futuramente e o carrossel crescerá automaticamente!
 const mySkills = [
-  {
-    title: 'HTML5',
-    description: 'Construção de layouts semânticos, acessíveis e otimizados para SEO e performance na web.',
-    icon: Code,
-    brandColor: '#E34F26' // Laranja HTML
-  },
-  {
-    title: 'CSS3 & Tailwind',
-    description: 'Estilização avançada, animações e layouts responsivos utilizando a metodologia utility-first do Tailwind.',
-    icon: Palette,
-    brandColor: '#38BDF8' // Azul Tailwind
-  },
-  {
-    title: 'JavaScript (ES6+)',
-    description: 'Manipulação do DOM, interatividade, consumo de APIs e lógica complexa para aplicações web dinâmicas.',
-    icon: FileJson,
-    brandColor: '#F7DF1E' // Amarelo JS
-  },
   {
     title: 'React.js',
     description: 'Criação de interfaces de usuário componentizadas, gerenciamento de estado e hooks customizados.',
     icon: Atom,
-    brandColor: '#61DAFB' // Ciano React
+    brandColor: '#61DAFB' 
   },
   {
     title: 'TypeScript',
     description: 'Tipagem estática para JavaScript, garantindo código mais seguro, previsível e fácil de dar manutenção.',
     icon: FileCode2,
-    brandColor: '#3178C6' // Azul TypeScript
+    brandColor: '#3178C6' 
+  },
+  {
+    title: 'Node.js',
+    description: 'Construção de aplicações server-side assíncronas e escaláveis, focando em alta performance no backend.',
+    icon: Server,
+    brandColor: '#339933' 
+  },
+  {
+    title: 'PostgreSQL',
+    description: 'Gerenciamento de banco de dados relacional robusto, com foco em integridade, escalabilidade e segurança.',
+    icon: HardDrive, 
+    brandColor: '#336791' 
+  },
+  {
+    title: 'Docker',
+    description: 'Containerização de aplicações para garantir ambientes padronizados, isolados e de fácil deploy em produção.',
+    icon: Box,
+    brandColor: '#2496ED' 
+  },
+  {
+    title: 'CSS3 & Tailwind',
+    description: 'Estilização avançada, animações e layouts responsivos utilizando a metodologia utility-first do Tailwind.',
+    icon: Palette,
+    brandColor: '#38BDF8' 
+  },
+  {
+    title: 'Express.js',
+    description: 'Criação de servidores e APIs RESTful de forma ágil, com roteamento eficiente e gerenciamento de middlewares.',
+    icon: Route, 
+    brandColor: '#828282' 
+  },
+  {
+    title: 'JavaScript (ES6+)',
+    description: 'Manipulação do DOM, interatividade, consumo de APIs e lógica complexa para aplicações web dinâmicas.',
+    icon: FileJson,
+    brandColor: '#F7DF1E' 
+  },
+  {
+    title: 'Jest',
+    description: 'Implementação de testes unitários e de integração para assegurar a confiabilidade e prevenir regressões no código.',
+    icon: TestTube,
+    brandColor: '#C21325' 
+  },
+  {
+    title: 'REST API',
+    description: 'Desenvolvimento de arquiteturas de comunicação eficientes, padronizadas e seguras entre sistemas cliente-servidor.',
+    icon: Network,
+    brandColor: '#FF6C37' 
+  },
+  {
+    title: 'SQL',
+    description: 'Modelagem de dados relacionais, elaboração de consultas complexas e otimização estrutural de bancos de dados.',
+    icon: Database,
+    brandColor: '#E38C00' 
+  },
+  {
+    title: 'HTML5',
+    description: 'Construção de layouts semânticos, acessíveis e otimizados para SEO e performance na web.',
+    icon: Code,
+    brandColor: '#E34F26' 
   },
   {
     title: 'Vite',
     description: 'Configuração e empacotamento ultrarrápido de projetos front-end para uma experiência de desenvolvimento ágil.',
     icon: Zap,
-    brandColor: '#646CFF' // Roxo Vite
+    brandColor: '#646CFF' 
   }
-];
-
+]
 const Skills = () => {
   const carouselRef = useRef<HTMLDivElement>(null);
 
@@ -59,16 +99,14 @@ const Skills = () => {
     <section id="skills" className="w-full py-24 bg-(--bg-primary) text-(--text-primary) transition-colors duration-300">
       <div className="max-w-7xl mx-auto px-8 md:px-12 relative">
         
-        {/* === CABEÇALHO DA SEÇÃO COM ANIMAÇÃO === */}
+        {/* CABEÇALHO DA SEÇÃO*/}
         <div className="mb-12">
-          {/* Adicionada a classe 'group' e 'cursor-default' para a animação do título */}
           <div className="max-w-2xl group cursor-default">
             <span className="text-(--accent-color) font-semibold tracking-wider uppercase text-sm mb-2 block font-mono">
-              ./habilidades
+              STACKS
             </span>
             <h2 className="text-4xl md:text-5xl font-bold relative inline-block mb-4">
               Habilidades Técnicas
-              {/* A linha que cresce no hover igual ao About */}
               <div className="absolute -bottom-2 left-0 w-1/3 h-1 bg-(--accent-color) rounded-full transition-all duration-300 group-hover:w-full"></div>
             </h2>
             <p className="text-(--text-secondary) text-lg mt-4 leading-relaxed">
@@ -77,25 +115,21 @@ const Skills = () => {
           </div>
         </div>
 
-        {/* === ÁREA DO CARROSSEL COM SETAS FLUTUANTES === */}
-        {/* Criamos um group específico (group/carousel) para controlar quando as setas aparecem */}
+        {/*  ÁREA DO CARROSSEL  */}
         <div className="relative group/carousel">
           
-          {/* Seta Esquerda Flutuante */}
+          {/* Seta Esquerda */}
           <button 
             onClick={() => scroll('left')}
-            className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-1/2 z-20 hidden md:flex items-center justify-center w-14 h-14 rounded-full bg-(--ui-surface)/70 backdrop-blur-md border border-(--ui-border) text-(--text-primary) shadow-2xl opacity-0 group-hover/carousel:opacity-100 transition-all duration-300 hover:scale-110 hover:border-(--accent-color) hover:text-(--accent-color)"
-            aria-label="Rolar para a esquerda"
-          >
-            <ChevronLeft size={28} />
+            className="absolute left-2 md:-left-6 top-1/2 -translate-y-1/2 z-20 flex items-center justify-center w-10 h-10 md:w-14 md:h-14 rounded-full bg-(--ui-surface) md:bg-(--ui-surface)/70 backdrop-blur-md border border-(--ui-border) text-(--text-primary) shadow-2xl opacity-100 md:opacity-0 group-hover/carousel:opacity-100 transition-all duration-300 hover:scale-110 hover:border-(--accent-color) hover:text-(--accent-color)"
+            aria-label="Rolar para a esquerda">
+            <ChevronLeft size={24} className="md:w-7 md:h-7" />
           </button>
 
-          {/* O Carrossel */}
+          {/* Carrossel */}
           <div 
             ref={carouselRef}
-            // Adicionado um padding vertical (py-4) para dar espaço para a sombra do hover dos cards não cortar
-            className="flex gap-6 overflow-x-auto snap-x snap-mandatory py-4 -mx-8 px-8 md:mx-0 md:px-0 scroll-smooth [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
-          >
+            className="flex gap-6 overflow-x-auto snap-x snap-mandatory py-4 px-6 md:px-0 scroll-smooth [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
             {mySkills.map((skill, index) => (
               <SkillCard 
                 key={index}
@@ -107,13 +141,13 @@ const Skills = () => {
             ))}
           </div>
 
-          {/* Seta Direita Flutuante */}
+          {/* Seta Direita */}
           <button 
             onClick={() => scroll('right')}
-            className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-1/2 z-20 hidden md:flex items-center justify-center w-14 h-14 rounded-full bg-(--ui-surface)/70 backdrop-blur-md border border-(--ui-border) text-(--text-primary) shadow-2xl opacity-0 group-hover/carousel:opacity-100 transition-all duration-300 hover:scale-110 hover:border-(--accent-color) hover:text-(--accent-color)"
+            className="absolute right-2 md:-right-6 top-1/2 -translate-y-1/2 z-20 flex items-center justify-center w-10 h-10 md:w-14 md:h-14 rounded-full bg-(--ui-surface) md:bg-(--ui-surface)/70 backdrop-blur-md border border-(--ui-border) text-(--text-primary) shadow-2xl opacity-100 md:opacity-0 group-hover/carousel:opacity-100 transition-all duration-300 hover:scale-110 hover:border-(--accent-color) hover:text-(--accent-color)"
             aria-label="Rolar para a direita"
           >
-            <ChevronRight size={28} />
+            <ChevronRight size={24} className="md:w-7 md:h-7" />
           </button>
           
         </div>

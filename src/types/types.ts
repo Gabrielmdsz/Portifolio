@@ -10,10 +10,12 @@ export interface ProjectType {
     id: string;
     title: string;
     description: string;
-    category: string; // ex: 'landing', 'backend', 'apps'
+    category: string; 
     isHighlight: boolean;
     githubUrl: string;
     liveUrl: string;
+    desktopImage: string;
+    mobileImage: string;
 }
 
 export interface FilterType {

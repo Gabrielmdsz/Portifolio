@@ -5,27 +5,30 @@
 @layer base {
   /* TEMA LIGHT */
   :root {
-    --bg-primary: #f3f4f6;      /* Cinza claro base (gray-100) */
-    --text-primary: #111827;    /* Cinza quase preto para alto contraste */
-    --text-secondary: #4b5563;  
+    --bg-primary: #f0f3fc;      
+    --text-primary: #111827;    
+    --text-secondary: #222526;  
     
-    --accent-color: #3b82f6;    /* Azul Nimbus (blue-500) */
-    --accent-hover: #2563eb;    /* Azul um pouco mais escuro para hover */
+    --accent-color: #6274E0;    
+    --accent-hover: #4255B2;   
     
-    --ui-surface: #e5e7eb;      /* Fundo de botões e cards */
-    --ui-border: #d1d5db;       
+    --ui-surface: #e5e7eb;     
+    --ui-border: #d1d5db;   
+    
+    --code-bg: #ffffff;         
+    --code-header: #f9fafb;
   }
 
   /* TEMA DARK */
   .dark {
-    --bg-primary: #1f2937;      /* Cinza escuro base (gray-800) */
-    --text-primary: #f9fafb;    /* Branco off-white */
-    --text-secondary: #9ca3af;  
+    --bg-primary: #111313;      
+    --text-primary: #f9fafb;    
+    --text-secondary: #e5e7eb;  
     
-    --accent-color: #a855f7;    /* Roxo/Lilás (purple-500) */
-    --accent-hover: #c084fc;    /* Lilás mais claro para brilho/hover */
+    --accent-color: #6214E0;    
+    --accent-hover: #7646E8;    
     
-    --ui-surface: #374151;      
+    --ui-surface: #242425;      
     --ui-border: #4b5563;       
     
     /* Cores do mock do editor */
@@ -43,4 +46,35 @@ body {
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(10px); }
   to { opacity: 1; transform: translateY(0); }
+}
+
+/*  Animações do Background Home */
+
+/* Animação para a imagem do fundo */
+.animate-slow-pan {
+  animation: slow-pan 20s ease-in-out infinite;
+}
+
+@keyframes slow-pan {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.08); } 
+}
+
+/* Animações das luzes ( Roxo e Azul ) */
+.animate-pulse-light-purple {
+  animation: pulse-light-purple 8s ease-in-out infinite;
+}
+
+.animate-pulse-light-blue {
+  animation: pulse-light-blue 8s ease-in-out infinite;
+}
+
+@keyframes pulse-light-purple {
+  0%, 100% { opacity: 0.2; }
+  50% { opacity: 0.8; } 
+}
+
+@keyframes pulse-light-blue {
+  0%, 100% { opacity: 0.2; }
+  50% { opacity: 0.8; } 
 }
