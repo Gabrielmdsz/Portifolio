@@ -1,22 +1,14 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { Moon, Sun, Menu, X } from "lucide-react";
 import LogoDark from "../../../public/images/logo-roxo-escuro.png";
 import LogoLight from "../../../public/images/logo-azul.png";
+import { useTheme } from "../../context/ThemeContext";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const { theme, toggleTheme } = useTheme();
 
-  const [isDarkMode, setIsDarkMode] = useState(true);
-
-  useEffect(() => {
-    if (isDarkMode) {
-      document.documentElement.classList.add("dark");
-    } else {
-      document.documentElement.classList.remove("dark");
-    }
-  }, [isDarkMode]);
-
-  const toggleTheme = () => setIsDarkMode(!isDarkMode);
+  const isDarkMode = theme === 'dark';
 
   return (
     <header className="fixed top-0 w-full flex items-center justify-between px-8 py-2 z-50 bg-(--bg-primary)/80 backdrop-blur-md border-b border-(--ui-border)/30 transition-all duration-300">

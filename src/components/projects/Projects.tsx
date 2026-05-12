@@ -1,8 +1,8 @@
 import { useState } from "react";
 import ProjectCard from "./ProjectCard";
 import type { ProjectType, FilterType } from "../../types/types";
-import Dvdesk from "../../../public/images/dv-desktop.png"
-import Dvmobile from "../../../public/images/dv-mobile.png"
+import Dvdesk from "/images/dv-desktop.png"
+import Dvmobile from "/images/dv-mobile.png"
 
 const filters: FilterType[] = [
   { id: "highlights", label: "Destaques" },

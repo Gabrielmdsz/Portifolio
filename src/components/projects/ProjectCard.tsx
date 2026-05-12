@@ -15,7 +15,7 @@ const ProjectCard = ({ project }: { project: ProjectType }) => {
         <div className="relative w-[90%] lg:w-[85%] max-w-200 group-hover:-translate-y-2 transition-transform duration-500 z-10 flex items-center justify-center">
           
           {/* Mockup Desktop */}
-          <div className="w-full relative z-10 drop-shadow-2xl">
+          <div className="w-full relative z-10">
             <img 
               src={project.desktopImage} 
               alt={`Mockup do projeto ${project.title}`}
@@ -24,7 +24,7 @@ const ProjectCard = ({ project }: { project: ProjectType }) => {
           </div>
 
           {/* Mockup Mobile */}
-          <div className="absolute w-[32%] sm:w-[30%] lg:w-[26%] bottom-[-5%] sm:bottom-[-8%] right-[-5%] lg:right-[-8%] z-20 drop-shadow-2xl transition-transform duration-500 hover:-translate-y-2">
+          <div className="absolute w-[32%] sm:w-[30%] lg:w-[26%] bottom-[-5%] sm:bottom-[-8%] right-[-5%] lg:right-[-8%] z-20 transition-transform duration-500 hover:-translate-y-2">
             <img 
               src={project.mobileImage} 
               alt={`Mockup mobile do projeto ${project.title}`}
